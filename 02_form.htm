@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignIn Form</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Poppins";
+        }
+        body{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+        .form_container{
+            background-color: rgb(188, 43, 207);
+            padding: 2em;
+            width: 30%;
+            border-radius: 10px;
+        }
+        div{
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 1rem;
+            color: white;
+        }
+        input{
+            width:100%;
+            padding:5px;
+            margin-top: 5px;
+            font-weight: bold;
+            border: none;
+            outline: none;
+            font-size: 1em;
+        }
+        button{
+            border: none;
+            outline: none;
+            padding: 5px;
+            cursor: pointer;
+            background-color: rgb(24, 142, 172);
+            color: white;
+            font-weight: bold;
+            font-size: 1em;
+            transition: all 1s ease-in-out;
+        }
+        button:hover{
+            background-color: rgb(106, 198, 226);
+        }
+    </style>
+</head>
+<body>
+    <form class="form_container">
+        <div>
+            <label for="username">Username</label>
+            <input type="text" placeholder="Enter Your Username" name="username" id="username">
+        </div>
+        <div>
+            <label for="password">Password</label>
+            <input type="password" placeholder="Enter Your password" name="password" id="password">
+        </div>
+       <div>
+        <button type="submit">Login</button>
+       </div>
+    </form>
+</body>
+</html>
